@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Gail Print Corporation - Printing company offering boxes, shopping bags, and packaging needs in Pasay City, Philippines." />
+  <meta name="keywords" content="Printing, Boxes, Shopping Bags, Packaging, Pasay City, Philippines, Gail Print Corporation, Gailprint.net" />
+  <meta name="author" content="Gail Print Corporation" />
+  <title>Gailprint.net | Gail Print Corporation - Printing Solutions in Pasay City</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom 3D text effect */
+    .text-3d {
+      text-shadow:
+        1px 1px 0 #00000088,
+        2px 2px 0 #00000066,
+        3px 3px 0 #00000044,
+        4px 4px 0 #00000022;
+    }
+    /* 3D card effect */
+    .card-3d {
+      transform-style: preserve-3d;
+      transition: transform 0.5s;
+      animation: floatRotate 6s ease-in-out infinite;
+    }
+    .card-3d:hover {
+      transform: rotateY(15deg) rotateX(10deg) scale(1.05);
+      box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+      animation-play-state: paused;
+    }
+    /* Floating and rotating animation */
+    @keyframes floatRotate {
+      0%, 100% {
+        transform: translateY(0) rotateY(0deg) rotateX(0deg);
+      }
+      50% {
+        transform: translateY(-15px) rotateY(20deg) rotateX(10deg);
+      }
+    }
+    /* Floating 3D shape in hero */
+    .floating-shape {
+      position: absolute;
+      top: 10%;
+      right: 10%;
+      width: 120px;
+      height: 120px;
+      background: linear-gradient(135deg, #facc15, #db2777);
+      border-radius: 20% 50% 30% 70% / 60% 30% 70% 40%;
+      filter: drop-shadow(0 0 10px #facc15);
+      animation: floatShape 8s ease-in-out infinite;
+      z-index: 10;
+    }
+    @keyframes floatShape {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-20px) rotate(15deg);
+      }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Gail Print Corporation",
+    "image": "https://example.com/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "L.Wood St.",
+      "addressLocality": "Pasay City",
+      "addressRegion": "Metro Manila",
+      "postalCode": "1300",
+      "addressCountry": "PH"
+    },
+    "telephone": "(02) 8831 4402",
+    "url": "https://gailprint.net",
+    "sameAs": [
+      "https://www.facebook.com/gailprintcorp",
+      "https://twitter.com/gailprintcorp",
+      "https://www.tiktok.com/@gailprintcorp",
+      "https://www.instagram.com/gailprintcorp",
+      "https://www.linkedin.com/company/gailprintcorp",
+      "https://www.youtube.com/gailprintcorp"
+    ]
+  }
+  </script>
+</head>
+  <body class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 font-poppins text-white min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-black bg-opacity-50 backdrop-blur-md sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <!-- Editable Company Name -->
+      <h1 class="text-3xl font-extrabold text-white text-3d" contenteditable="true" aria-label="Company Name">Gail Print Corporation</h1>
+      <nav>
+        <ul class="flex space-x-6 text-lg font-semibold">
+          <li><a href="#about" class="hover:text-yellow-300 transition">About</a></li>
+          <li><a href="#services" class="hover:text-yellow-300 transition">Services</a></li>
+          <li><a href="#blog" class="hover:text-yellow-300 transition">Blog</a></li>
+          <li><a href="#contact" class="hover:text-yellow-300 transition">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative flex-grow flex items-center justify-center text-center px-6 py-20">
+    <div>
+      <!-- Editable Hero Title -->
+      <h2 class="text-5xl md:text-6xl font-extrabold mb-6 text-yellow-300 text-3d drop-shadow-lg" contenteditable="true" aria-label="Hero Title">Your Trusted Printing Partner</h2>
+      <!-- Editable Hero Description -->
+      <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-8 drop-shadow-md" contenteditable="true" aria-label="Hero Description">
+        High-quality boxes, shopping bags, and packaging solutions tailored for your business needs.
+      </p>
+      <a href="#contact" class="inline-block bg-yellow-400 text-black font-bold px-8 py-4 rounded-lg shadow-lg hover:bg-yellow-500 transition transform hover:scale-105">
+        Get a Quote
+      </a>
+    </div>
+    <!-- Floating 3D shape -->
+    <div class="floating-shape" aria-hidden="true"></div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-black bg-opacity-40 backdrop-blur-md py-16 px-6">
+    <div class="container mx-auto max-w-5xl text-center">
+      <!-- Editable About Title -->
+      <h3 class="text-4xl font-bold mb-6 text-yellow-300 text-3d" contenteditable="true" aria-label="About Title">About Gail Print Corporation</h3>
+      <!-- Editable About Description -->
+      <p class="text-lg md:text-xl max-w-4xl mx-auto leading-relaxed" contenteditable="true" aria-label="About Description">
+        Located at L.Wood St. Pasay City, Philippines, Gail Print Corporation is your go-to printing company for all your packaging needs. We specialize in producing high-quality boxes, shopping bags, and custom packaging solutions that help your brand stand out.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 px-6">
+    <div class="container mx-auto max-w-6xl">
+      <!-- Editable Services Title -->
+      <h3 class="text-4xl font-bold mb-12 text-center text-yellow-300 text-3d" contenteditable="true" aria-label="Services Title">Our Services</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="bg-gradient-to-tr from-pink-500 to-purple-600 rounded-xl p-8 card-3d shadow-lg">
+          <div class="text-6xl mb-4 text-yellow-300"><i class="fas fa-box"></i></div>
+          <!-- Editable Service 1 Title -->
+          <h4 class="text-2xl font-semibold mb-2" contenteditable="true" aria-label="Service 1 Title">Boxes</h4>
+          <!-- Editable Service 1 Description -->
+          <p contenteditable="true" aria-label="Service 1 Description">Durable and customizable boxes perfect for packaging and shipping your products with style and protection.</p>
+        </div>
+        <div class="bg-gradient-to-tr from-yellow-400 to-red-500 rounded-xl p-8 card-3d shadow-lg">
+          <div class="text-6xl mb-4 text-yellow-300"><i class="fas fa-shopping-bag"></i></div>
+          <!-- Editable Service 2 Title -->
+          <h4 class="text-2xl font-semibold mb-2" contenteditable="true" aria-label="Service 2 Title">Shopping Bags</h4>
+          <!-- Editable Service 2 Description -->
+          <p contenteditable="true" aria-label="Service 2 Description">Eco-friendly and stylish shopping bags designed to enhance your brand visibility and customer experience.</p>
+        </div>
+        <div class="bg-gradient-to-tr from-green-400 to-blue-600 rounded-xl p-8 card-3d shadow-lg">
+          <div class="text-6xl mb-4 text-yellow-300"><i class="fas fa-box-open"></i></div>
+          <!-- Editable Service 3 Title -->
+          <h4 class="text-2xl font-semibold mb-2" contenteditable="true" aria-label="Service 3 Title">Packaging Needs</h4>
+          <!-- Editable Service 3 Description -->
+          <p contenteditable="true" aria-label="Service 3 Description">Comprehensive packaging solutions tailored to your specific business requirements, ensuring quality and reliability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="bg-black bg-opacity-40 backdrop-blur-md py-16 px-6">
+    <div class="container mx-auto max-w-6xl">
+      <h3 class="text-4xl font-bold mb-12 text-yellow-300 text-3d text-center" contenteditable="true" aria-label="Blog Title">Our Blog</h3>
+      <div class="space-y-10">
+        <article class="bg-gradient-to-tr from-purple-600 to-pink-600 rounded-xl p-8 shadow-lg">
+          <h4 class="text-2xl font-semibold mb-2" contenteditable="true" aria-label="Blog Post 1 Title">The Importance of Quality Packaging</h4>
+          <time datetime="2024-04-01" class="block mb-4 text-yellow-300">April 1, 2024</time>
+          <p contenteditable="true" aria-label="Blog Post 1 Summary">
+            Discover how quality packaging can enhance your brand image and protect your products during shipping.
+          </p>
+          <a href="#" class="inline-block mt-4 text-yellow-400 hover:text-yellow-300 font-semibold">Read more &rarr;</a>
+        </article>
+        <article class="bg-gradient-to-tr from-green-600 to-blue-600 rounded-xl p-8 shadow-lg">
+          <h4 class="text-2xl font-semibold mb-2" contenteditable="true" aria-label="Blog Post 2 Title">Eco-Friendly Shopping Bags Trends</h4>
+          <time datetime="2024-03-15" class="block mb-4 text-yellow-300">March 15, 2024</time>
+          <p contenteditable="true" aria-label="Blog Post 2 Summary">
+            Learn about the latest trends in eco-friendly shopping bags and how they benefit the environment and your business.
+          </p>
+          <a href="#" class="inline-block mt-4 text-yellow-400 hover:text-yellow-300 font-semibold">Read more &rarr;</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-black bg-opacity-40 backdrop-blur-md py-16 px-6">
+    <div class="container mx-auto max-w-4xl text-center">
+      <!-- Editable Contact Title -->
+      <h3 class="text-4xl font-bold mb-6 text-yellow-300 text-3d" contenteditable="true" aria-label="Contact Title">Contact Us</h3>
+      <!-- Editable Address -->
+      <p class="mb-4 text-lg" contenteditable="true" aria-label="Address">L.Wood St. Pasay City, Philippines</p>
+      <!-- Editable Phone -->
+      <p class="mb-8 text-lg" contenteditable="true" aria-label="Phone">Phone: <a href="tel:+63288314402" class="underline hover:text-yellow-300">(02) 8831 4402</a></p>
+      <a href="mailto:info@gailprintcorp.com" class="inline-block bg-yellow-400 text-black font-bold px-8 py-4 rounded-lg shadow-lg hover:bg-yellow-500 transition transform hover:scale-105" contenteditable="false" aria-label="Email Button">
+        Email Us
+      </a>
+      <!-- Google Map Embed -->
+      <div class="mt-10 rounded-lg overflow-hidden shadow-lg" aria-label="Google Map Location">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.1234567890123!2d120.99999999999999!3d14.533333333333333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9a123456789%3A0xabcdef1234567890!2sL.Wood%20St.%2C%20Pasay%20City%2C%20Metro%20Manila%2C%20Philippines!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus"
+          width="100%"
+          height="300"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Gail Print Corporation Location"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black bg-opacity-70 text-yellow-300 py-6 text-center">
+    <p contenteditable="true" aria-label="Footer Copyright">&copy; 2024 Gailprint.net Gail Print Corporation. All rights reserved.</p>
+    <div class="mt-3 space-x-4">
+      <a href="https://www.facebook.com/gailprintcorp" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="hover:text-yellow-400"><i class="fab fa-facebook fa-lg"></i></a>
+      <a href="https://twitter.com/gailprintcorp" target="_blank" rel="noopener noreferrer" aria-label="X" class="hover:text-yellow-400"><i class="fab fa-twitter fa-lg"></i></a>
+      <a href="https://www.tiktok.com/@gailprintcorp" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="hover:text-yellow-400"><i class="fab fa-tiktok fa-lg"></i></a>
+      <a href="https://www.instagram.com/gailprintcorp" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:text-yellow-400"><i class="fab fa-instagram fa-lg"></i></a>
+      <a href="https://www.linkedin.com/company/gailprintcorp" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hover:text-yellow-400"><i class="fab fa-linkedin fa-lg"></i></a>
+      <a href="https://www.youtube.com/gailprintcorp" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="hover:text-yellow-400"><i class="fab fa-youtube fa-lg"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>
